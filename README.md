@@ -9,3 +9,10 @@ Therefore, here I show only my part of the work on creating a database, tables, 
 Here is almost everything I did during my internship and everything I learned by doing real tasks.
 Besides functions and stored procedures, I also created several reports for DW and created ABC analysis and Cohort analysis. 
 ABC analysis I also implemented in SQL Server Reporting Services and Cohort Analysis I visualized in Power BI.
+
+This database was created for an online electronics store. 
+The database contains 23 tables with different types of relationships both one to many and many to many.
+Our store has warehouses in different cities of Ukraine and offers several types of delivery in Ukraine.
+I have created the following tables: Clients, ClientsDiscount, Comments, Manufacturers, PaymentType, ExceptionTbl, DiscountSettings and two additional tables RateSettings and YearSettings, which I used in the views.
+In the ClientsDiscount table I add only customers who have a discount and the amount of their discount.
+I created the following rule for customers with discount. This rule says that if the amount of the customer's order is more than 2000 UAH, then the customer gets a discount for the next orders, and the larger the order amount, the greater the discount. Information about what discount is provided according to the order amount is stored in the table DiscountSettings.
